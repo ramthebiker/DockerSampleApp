@@ -24,3 +24,9 @@ steps:
     command: build
     projects: '**/*.csproj'
     feedsToUse: 'select'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    feedsToUse: 'select'
+    versioningScheme: 'off'
+    workingDirectory: 'WebApplication1'
